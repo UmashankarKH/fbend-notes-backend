@@ -1,0 +1,4 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+gunicorn>=22.0
+azure-cosmos>=4.7

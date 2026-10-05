@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FBEND Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>FBEND Notes</h1>
+      <p class="sub">Frontend on <b>Azure Static Web Apps</b> &rarr; API on <b>App Service</b> &rarr; data in <b>Cosmos DB</b></p>
+    </header>
+
+    <section id="status" class="status">Checking backend…</section>
+
+    <form id="note-form">
+      <input id="note-text" type="text" placeholder="Write a note and press Enter" maxlength="500" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="notes"></ul>
+    <p id="empty" class="empty">No notes yet.</p>
+
+    <footer>API: <code id="api-url"></code></footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
